@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "tslint:recomend",
+    "tslint-microsoft-contrib",
+    "tslint-sonarts",
+    "tslint-consistent-codestyle"
+  ],
+  "rulesDirectory": [
+    "node_modules/tslint-microsoft-contrib"
+  ],
+  "rules": {}
+}
