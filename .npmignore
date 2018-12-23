@@ -3,6 +3,8 @@ src
 tmp
 .gitignore
 .huskyrc
+.size-limit
 jest.config.js
 tslint.json
 tsconfig.json
+package-lock.json

@@ -1,6 +1,6 @@
 [
   {
-    "path": "build/index.js",
+    "path": "build/**/*.js",
     "limit": "1 KB"
   }
 ]
