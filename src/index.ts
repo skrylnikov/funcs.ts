@@ -1,5 +1,5 @@
-import map from './lib/map';
+import map from './map';
 
-export {
+export default {
   map,
 };

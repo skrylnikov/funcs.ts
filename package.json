@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "build": "npm run test && tsc",
+    "test": "jest --coverage",
     "test:w": "jest --watch"
   },
   "author": "",
