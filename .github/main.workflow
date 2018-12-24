@@ -10,6 +10,6 @@ action "Install dependencies" {
 
 action "Build" {
   uses = "actions/npm@e7aaefe"
-  runs = "build"
+  runs = "run build"
   needs = ["Install dependencies"]
 }
