@@ -1,8 +1,12 @@
 {
-  "name": "funcs.ts",
+  "name": "funcs-ts",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skrylnikov/funcs.ts.git"
