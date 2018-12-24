@@ -4,12 +4,12 @@ workflow "Run Test" {
 }
 
 action "Install dependencies" {
-  uses = "actions/npm@main"
+  uses = "actions/npm@e7aaefe"
   args = "ci"
 }
 
 action "Test" {
-  uses = "actions/npm@main"
+  uses = "actions/npm@e7aaefe"
   runs = "test"
   needs = ["Install dependencies"]
 }
