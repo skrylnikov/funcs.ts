@@ -1,15 +1,15 @@
-workflow "New workflow" {
+workflow "Run Test" {
   on = "push"
-  resolves = ["Build"]
+  resolves = ["Test"]
 }
 
 action "Install dependencies" {
-  uses = "actions/npm@e7aaefe"
+  uses = "actions/npm@main"
   args = "ci"
 }
 
-action "Build" {
-  uses = "actions/npm@e7aaefe"
-  runs = "run build"
+action "Test" {
+  uses = "actions/npm@main"
+  runs = "test"
   needs = ["Install dependencies"]
 }
