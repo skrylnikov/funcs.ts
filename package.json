@@ -18,12 +18,18 @@
   "homepage": "https://github.com/skrylnikov/funcs.ts",
   "license": "MPL-2.0",
   "scripts": {
-    "build": "npm run test && tsc",
+    "build": "pack build",
+    "publish": "pack publish",
     "test": "jest --coverage",
     "test:w": "jest --watch",
     "size": "size-limit"
   },
   "devDependencies": {
+    "@pika/pack": "^0.3.2",
+    "@pika/plugin-build-node": "^0.3.11",
+    "@pika/plugin-build-types": "^0.3.11",
+    "@pika/plugin-build-web": "^0.3.11",
+    "@pika/plugin-standard-pkg": "^0.3.11",
     "@types/jest": "^23.3.10",
     "husky": "^1.2.1",
     "jest": "^23.6.0",
@@ -35,5 +41,21 @@
     "tslint-sonarts": "^1.8.0",
     "typescript": "^3.2.2",
     "typescript-tslint-plugin": "^0.2.1"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
+    ]
   }
 }
